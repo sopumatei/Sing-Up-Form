@@ -1,8 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+/* RESET */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     outline: none;
+}
+
+/* VARIABLES */
+:root {
+    --background-color: whitesmoke;
+    --main-text-color: #333;
+    --second-text-color: #7a7a7a;
+    --theme-color: #0cd5e6;
+    --logo-bg-color: rgba(3, 3, 3, 0.65);
+
+    --main-font-size: 1.5rem;
+    --logo-font-size: 3rem;
+}
+
+/* GENERAL STYLES */
+body {
+    background-color: var(--background-color);
+    font-size: var(--main-font-size);
+
+    display: flex;
+    flex-flow: row nowrap;
+    min-height: 100vh;
+}
+
+/* LEFT SIDE */
+#left-side {
+    width: 40vw;
+    /* flex: 1; */
+    background-image: url("https://images.unsplash.com/photo-1579567761406-4684ee0c75b6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGN5YmVyJTIwc2VjdXJpdHl8ZW58MHx8MHx8fDA%3D");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    width: 100%;
+    background-color: var(--logo-bg-color);
+    color: var(--theme-color);
+    font-size: var(--logo-font-size);
+    text-align: center;
+
+    padding: 20px 10px;
 }
