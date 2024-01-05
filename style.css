@@ -121,6 +121,10 @@ form input {
     transition: all 0.2s ease-in-out;
 }
 
+form input::placeholder {
+    color: var(--theme-color);
+}
+
 form input:focus {
     border: 2px solid var(--theme-color);
 }
