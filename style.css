@@ -129,6 +129,19 @@ form input:focus {
     color: var(--theme-color);
 }
 
+.filled label {
+    color: var(--theme-color);
+}
+
+.filled input {
+    border-color: var(--theme-color);
+}
+
+.error-msg {
+    color: tomato;
+    font-size: 0.8em;
+}
+
 #log-in:hover {
     text-decoration: underline;
     cursor: pointer;
@@ -166,9 +179,5 @@ form input:focus {
 
     #right-side {
         width: 60vw;
-    }
-
-    .form-item:nth-of-type(even) {
-        margin-left: 60px;
     }
 }
