@@ -11,6 +11,7 @@
 /* VARIABLES */
 :root {
     --background-color: whitesmoke;
+    --form-bg-color: white;
     --main-text-color: #333;
     --second-text-color: #7a7a7a;
     --theme-color: #0cd5e6;
@@ -22,6 +23,7 @@
 
 /* GENERAL STYLES */
 body {
+    font-family: 'Poppins', sans-serif;
     background-color: var(--background-color);
     font-size: var(--main-font-size);
 
@@ -33,7 +35,6 @@ body {
 /* LEFT SIDE */
 #left-side {
     width: 40vw;
-    /* flex: 1; */
     background-image: url("https://images.unsplash.com/photo-1579567761406-4684ee0c75b6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGN5YmVyJTIwc2VjdXJpdHl8ZW58MHx8MHx8fDA%3D");
     background-repeat: no-repeat;
     background-size: cover;
@@ -52,4 +53,92 @@ body {
     text-align: center;
 
     padding: 20px 10px;
+}
+
+/* RIGHT SIDE */
+#right-side {
+    width: 60vw;
+    color: var(--main-text-color);
+    display: flex;
+    flex-flow: column nowrap;
+
+    justify-content: center;
+    /* gap: 20px; */
+
+    /* padding: 30px; */
+}
+
+.right-side-item {
+    margin: 40px;
+    font-weight: 600;
+}
+
+.logo-text {
+    color: var(--theme-color);
+    font-weight: bold;
+}
+
+form {
+    background-color: var(--form-bg-color);
+    width: 100%;
+    padding: 20px 40px;
+    box-shadow: 5px 7px 10px 0px rgba(100, 100, 111, 0.2);
+
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#log-in {
+    color: var(--theme-color);
+}
+
+.form-container {
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+}
+
+.form-item {
+    display: flex;
+    flex-flow: column nowrap;
+
+    width: min(60vw, 400px);
+}
+
+form input {
+    font-size: inherit;
+    padding: 5px;
+    border: 2px solid #000;
+    border-radius: 6px;
+    transition: all 0.2s ease-in-out;
+}
+
+form input:focus {
+    border: 2px solid var(--theme-color);
+}
+
+#log-in:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#create-acc-btn {
+    width: min(200px, 60vw);
+    height: auto;
+
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--theme-color);
+    color: var(--background-color);
+
+    transition: all 0.2s ease-in-out;
+}
+
+#create-acc-btn:hover {
+    cursor: pointer;
+    opacity: 0.6;
 }
